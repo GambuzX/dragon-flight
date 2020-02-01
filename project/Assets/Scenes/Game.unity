@@ -411,20 +411,40 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 963194228}
     m_Modifications:
-    - target: {fileID: 3723845079742481299, guid: 4d400dfe28d2222499c1008ce8f897f5,
-        type: 3}
-      propertyPath: m_LocalPosition.x
+    - target: {fileID: 2013706059, guid: 4d400dfe28d2222499c1008ce8f897f5, type: 3}
+      propertyPath: controlPitchFactor
+      value: -30
+      objectReference: {fileID: 0}
+    - target: {fileID: 2013706059, guid: 4d400dfe28d2222499c1008ce8f897f5, type: 3}
+      propertyPath: xRange
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2013706059, guid: 4d400dfe28d2222499c1008ce8f897f5, type: 3}
+      propertyPath: positionYawFactor
+      value: 4.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2013706059, guid: 4d400dfe28d2222499c1008ce8f897f5, type: 3}
+      propertyPath: basePitch
+      value: -30
+      objectReference: {fileID: 0}
+    - target: {fileID: 2013706059, guid: 4d400dfe28d2222499c1008ce8f897f5, type: 3}
+      propertyPath: yMax
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3723845079742481299, guid: 4d400dfe28d2222499c1008ce8f897f5,
         type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3723845079742481299, guid: 4d400dfe28d2222499c1008ce8f897f5,
+        type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.35
+      value: -2.99
       objectReference: {fileID: 0}
     - target: {fileID: 3723845079742481299, guid: 4d400dfe28d2222499c1008ce8f897f5,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 7.7
+      value: 9.69
       objectReference: {fileID: 0}
     - target: {fileID: 3723845079742481299, guid: 4d400dfe28d2222499c1008ce8f897f5,
         type: 3}
