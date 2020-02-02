@@ -2441,8 +2441,9 @@ GameObject:
   - component: {fileID: 4970243231181238567}
   - component: {fileID: 4970243232758595338}
   - component: {fileID: 4970243232758595339}
+  - component: {fileID: 7640811662382257887}
   m_Layer: 0
-  m_Name: EVIL_WATCHER_PBR
+  m_Name: Watcher
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2491,11 +2492,23 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4970243231181557745}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 3.8634949, y: 2.1863651, z: 2.0438552}
   m_Center: {x: -0.09371971, y: 1.6152983, z: -0.2048201}
+--- !u!114 &7640811662382257887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4970243231181557745}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 496476fb96a2f714292b7ac03ba7fe91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4970243231181558109
 GameObject:
   m_ObjectHideFlags: 0

@@ -10,7 +10,20 @@ public class CollisionHandler : MonoBehaviour
 
     [Tooltip("FX prefab on player")][SerializeField] GameObject explosion;
     
+    [SerializeField] float invulnerabilityPeriod = 3f;
+    private bool isInvulnerable = true;
+
+    void Start() {
+        Invoke("ToggleInvulnerability", invulnerabilityPeriod);
+    }
+
+    private void ToggleInvulnerability() {
+        isInvulnerable = !isInvulnerable;
+    }
+
     private void OnTriggerEnter(Collider other) {
+        if(isInvulnerable) return;
+
         StartDeathSequence();
     }
 
