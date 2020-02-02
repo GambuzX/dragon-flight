@@ -1354,7 +1354,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 471550}
-  - component: {fileID: 11183594}
   m_Layer: 0
   m_Name: EVIL_WATCHER_PBR
   m_TagString: Untagged
@@ -1378,33 +1377,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!111 &11183594
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 134952}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: abe4155613fd851498d75d9d12cd90e6, type: 3}
-  m_Animations:
-  - {fileID: 7400000, guid: 938edb24c11e9014aa19fd86e3dc0625, type: 3}
-  - {fileID: 7400000, guid: dd58c4cb14c7e944ab6247f6f5d8226d, type: 3}
-  - {fileID: 7400000, guid: 2e8a63c734a727d46a6f9809f142c11d, type: 3}
-  - {fileID: 7400000, guid: 7d006c8019706b94eb8e97fd55b22024, type: 3}
-  - {fileID: 7400000, guid: 023d279374726bc42a5cea09463d80e9, type: 3}
-  - {fileID: 7400000, guid: cdd954e0573d14842b55f79e02b3f30e, type: 3}
-  - {fileID: 7400000, guid: abe4155613fd851498d75d9d12cd90e6, type: 3}
-  - {fileID: 7400000, guid: ea82e800fef2f7d46beb419b16c2ba5a, type: 3}
-  - {fileID: 7400000, guid: bb2e1ee4e6517c549ab41f3fb90f8d50, type: 3}
-  - {fileID: 7400000, guid: 1907c1492888c8e44b2a29c0ce48bf8b, type: 3}
-  - {fileID: 7400000, guid: bae085b7bea90284d8c60952482e23de, type: 3}
-  - {fileID: 7400000, guid: 1147a54c0781f834aa277d5a104d8a43, type: 3}
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 1
 --- !u!1 &134960
 GameObject:
   m_ObjectHideFlags: 0

@@ -3,32 +3,31 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
 
-public class Player : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
-
+    [Header("General")]
     [Tooltip("In ms^-1")][SerializeField] float xSpeed = 20f;
     [Tooltip("In m")][SerializeField] float xRange = 8f;
     [Tooltip("In ms^-1")][SerializeField] float ySpeed = 20f;
     [Tooltip("In m")][SerializeField] float yMin = -5f;
     [Tooltip("In m")][SerializeField] float yMax = 0;
 
+    [Header("Screen-position Based")]
     [SerializeField] float basePitch = -30f;
     [SerializeField] float positionPitchFactor = -5f;
-    [SerializeField] float controlPitchFactor = -30f;
     [SerializeField] float positionYawFactor = 4.3f;
+
+    [Header("Control-throw Based")]
+    [SerializeField] float controlPitchFactor = -30f;
     [SerializeField] float controlRollFactor = -20f;
 
     private float xThrow, yThrow;
+    private bool isControlEnabled = true;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     void Update()
     {
+        if(!isControlEnabled) return;
+        
         HandleMovement();
         HandleRotation();
     }
@@ -53,5 +52,9 @@ public class Player : MonoBehaviour
         float yaw = transform.localPosition.x * positionYawFactor;
         float roll = xThrow * controlRollFactor;
         transform.localRotation = Quaternion.Euler(pitch, yaw, roll);
+    }
+
+    void OnPlayerDeath() {
+        isControlEnabled = false;
     }
 }
