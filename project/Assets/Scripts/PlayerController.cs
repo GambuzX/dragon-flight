@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     [Tooltip("In ms^-1")][SerializeField] float ySpeed = 20f;
     [Tooltip("In m")][SerializeField] float yMin = -5f;
     [Tooltip("In m")][SerializeField] float yMax = 0;
+    [SerializeField] GameObject[] Guns;
 
     [Header("Screen-position Based")]
     [SerializeField] float basePitch = -30f;
@@ -30,6 +31,7 @@ public class PlayerController : MonoBehaviour
         
         HandleMovement();
         HandleRotation();
+        HandleFiring();
     }
 
     private void HandleMovement() {
@@ -56,5 +58,13 @@ public class PlayerController : MonoBehaviour
 
     void OnPlayerDeath() {
         isControlEnabled = false;
+    }
+
+    void HandleFiring() {
+        if (CrossPlatformInputManager.GetButtonDown("Fire")) {
+            foreach(GameObject gun in Guns) {
+                gun.GetComponent<ParticleSystem>().Play();
+            }
+        }
     }
 }
