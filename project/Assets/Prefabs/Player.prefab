@@ -45,9 +45,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   xSpeed: 20
-  xRange: 8
+  xRange: 6
   ySpeed: 20
-  yMin: -6
+  yMin: -5
   yMax: 0
   Guns:
   - {fileID: 2690362692568880074}
