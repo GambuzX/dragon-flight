@@ -28,7 +28,7 @@ public class CollisionHandler : MonoBehaviour
     }
 
     private void StartDeathSequence() {
-        SendMessage("OnPlayerDeath");
+        SendMessageUpwards("OnPlayerDeath");
         explosion.SetActive(true);     
         Invoke("ReloadScene", levelLoadDelay);   
     }
