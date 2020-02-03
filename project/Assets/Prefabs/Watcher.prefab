@@ -2509,6 +2509,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 496476fb96a2f714292b7ac03ba7fe91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathFX: {fileID: 2504779850521427247, guid: 259ee034bd0a4ca4bb4be0cc8a66de6a, type: 3}
+  deathFXParent: {fileID: 0}
 --- !u!1 &4970243231181558109
 GameObject:
   m_ObjectHideFlags: 0
